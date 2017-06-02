@@ -70,9 +70,9 @@ async def on_ready():
                 await client.edit_profile(password=discordpass, username=DiscrimName)
                 if ChangeNicknameBack:
                     await client.edit_profile(password=discordpass, username=OriginalName)
-                    print("[NOTE] Username changed and then changed back. Your new discriminator should be " + client.user.discriminator + " unless your connection is slow or has a high ping to Discord, however this will not affect the process.")
+                    print("[NOTE] Username changed and then changed back. This has changed your discriminator.")
                 else:
-                    print("[NOTE] Username changed. Your new discriminator should be " + client.user.discriminator + " unless your connection is slow or has a high ping to Discord, however this will not affect the process.")
+                    print("[NOTE] Username/discriminator changed.")
         else:
             print("[NOTE] You appear to already have a discriminator you want. Farming has stopped.")
         if ChangeNicknameBack:
