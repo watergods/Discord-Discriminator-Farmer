@@ -22,7 +22,7 @@ try:
 except:
     install("discord.py")
 
-print("[NOTE] Signing into Discord. This may take a while.")
+print("[INFO] Signing into Discord. This may take a while.")
 logging.basicConfig(level=logging.ERROR)
 client = discord.Client()
 
@@ -45,7 +45,7 @@ async def on_ready():
     if ServerCount == 1:
         print("[MEMBERS] There are approximately " + str(MemberCount) + " members in the 1 server you are in!")
         if MemberCount > 30000:
-           print("[NOTE] You are only in one server, but that server appears to have over 30,000 users. You should be fine, but if you encounter issues, join another big server.") 
+           print("[INFO] You are only in one server, but that server appears to have over 30,000 users. You should be fine, but if you encounter issues, join another big server.") 
     else:
         print("[MEMBERS] There are approximately " + str(MemberCount) + " members in the " + str(ServerCount) +  " servers you are in!")
     if MemberCount < 30000:
@@ -70,11 +70,11 @@ async def on_ready():
                 await client.edit_profile(password=discordpass, username=DiscrimName)
                 if ChangeNicknameBack:
                     await client.edit_profile(password=discordpass, username=OriginalName)
-                    print("[NOTE] Username changed and then changed back. This has changed your discriminator.")
+                    print("[INFO] Username changed and then changed back. This has changed your discriminator.")
                 else:
-                    print("[NOTE] Username/discriminator changed.")
+                    print("[INFO] Username/discriminator changed.")
         else:
-            print("[NOTE] You appear to already have a discriminator you want. Farming has stopped.")
+            print("[INFO] You appear to already have a discriminator you want. Farming has stopped.")
         if ChangeNicknameBack:
             await asyncio.sleep(3600)
         else:
