@@ -86,8 +86,8 @@ async def on_ready():
         else:
             print("[INFO] You appear to already have a discriminator you want. Farming has stopped.")
         if ChangeNicknameBack:
-            await asyncio.sleep(3600)
+            await asyncio.sleep(3597)
         else:
-            await asyncio.sleep(1800)
+            await asyncio.sleep(1797)
 
 client.run(discordtoken, bot=False)
