@@ -5,7 +5,6 @@ if sys.version_info < (3, 4):
 
 import shutil
 import os
-import time
 import asyncio
 
 try:
