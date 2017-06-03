@@ -81,6 +81,8 @@ async def on_ready():
                     print("[INFO] Username changed and then changed back. This has changed your discriminator.")
                 else:
                     print("[INFO] Username/discriminator changed.")
+                await asyncio.sleep(3)
+                print("[INFO] The new discriminator is #" + client.user.discriminator)
         else:
             print("[INFO] You appear to already have a discriminator you want. Farming has stopped.")
         if ChangeNicknameBack:
