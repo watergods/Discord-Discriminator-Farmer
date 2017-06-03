@@ -5,6 +5,7 @@ if sys.version_info < (3, 4):
 
 import shutil
 import os
+import pip
 import asyncio
 
 if os.path.isfile("temp.py"):
