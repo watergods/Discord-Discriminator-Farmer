@@ -7,6 +7,9 @@ import shutil
 import os
 import asyncio
 
+if os.path.isfile("temp.py"):
+    os.remove("temp.py")
+
 try:
     shutil.copyfile("config.ini", "temp.py")
     from temp import *
