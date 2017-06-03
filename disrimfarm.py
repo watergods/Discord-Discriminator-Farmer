@@ -28,7 +28,7 @@ try:
     import discord
 except:
     install("discord.py")
-	import discord
+    import discord
 
 print("[INFO] Signing into Discord. This may take a while.")
 logging.basicConfig(level=logging.ERROR)
