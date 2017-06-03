@@ -1,3 +1,8 @@
+import sys
+
+if sys.version_info < (3, 4):
+	raise Exception("You must be running Python 3.5 or above!")
+
 import shutil
 import os
 import time
