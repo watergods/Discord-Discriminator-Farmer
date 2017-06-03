@@ -4,7 +4,7 @@ The purpose of this tool is to farm a account's discriminator until it hits one 
 
 DISCLAIMER: This tool could be seen as a violation of the Discord TOS. Please use at your own risk. I have not ran on my main user account.
 
+![alt text](http://i.imgur.com/skbVrau.png)
+
 ![alt text](http://i.imgur.com/YtbbtMQ.png)
 ![alt text](http://i.imgur.com/cR1aB3c.png)
-
-![alt text](http://i.imgur.com/skbVrau.png)
